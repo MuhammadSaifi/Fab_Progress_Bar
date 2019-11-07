@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--background of progress bar-->
+    <item android:id="@android:id/background">
+<!-- shape of our progress bar like rectangle circule etx-->
+        <shape android:shape="rectangle">
+<!--  stroke means  colors of bar -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/colorPrimary"/>
+            <corners android:radius="10dp"/>
+        </shape>
+
+    </item>
+<!-- shape of progress bar -->
+    <item android:id="@android:id/progress">
+
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@color/colorPrimary"/>
+                <corners android:radius="10dp"/>
+            </shape>
+        </clip>
+
+    </item>
+
+</layer-list>
